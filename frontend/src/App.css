@@ -55,7 +55,141 @@ tr:nth-child(even) {
   margin: 0;
 }
 
+.app-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-btn:hover {
+  background: #e9e9e9;
+  border-color: #ccc;
+}
+
+.nav-btn.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.nav-btn.active:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
 .btn-disconnect {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
+}
+
+/* Dashboard */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.lab-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lab-selector select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chart-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.chart-wrapper {
+  height: 300px;
+}
+
+.pass-rates-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pass-rates-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.pass-rates-table {
+  width: 100%;
+}
+
+.pass-rates-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.pass-rates-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #eee;
+}
+
+.pass-rates-table tr:hover {
+  background: #f9f9f9;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0;
 }
